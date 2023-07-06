@@ -52,7 +52,7 @@ class ProfileScreen extends StatelessWidget {
   ),
 ),
             const SizedBox(height: 10),
-            itemProfile1( CupertinoIcons.bus,'Wallet', 'you have not verify kyc'),
+            itemProfile1( CupertinoIcons.bus,'Long travel', 'When you want to travel to long distance from one place to another'),
             const SizedBox(height: 10),
             itemProfile('Booking History'),
             const SizedBox(height: 10),
