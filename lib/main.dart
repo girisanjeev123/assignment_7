@@ -56,6 +56,8 @@ class ProfileScreen extends StatelessWidget {
             const SizedBox(height: 10),
             itemProfile('Booking History'),
             const SizedBox(height: 10),
+             itemProfile2('Wallet','you have not verified your kyc.'),
+            const SizedBox(height: 10),
              itemProfile('Favorite Destination'),
              const SizedBox(height: 10,),
             itemProfile('settings'),
@@ -94,6 +96,21 @@ itemProfile1( IconData iconData,String title, String subtitle) {
         subtitle: Text(subtitle),
         leading: Icon(iconData),
         
+        trailing: Icon(Icons.arrow_forward, color: Colors.grey.shade400),
+        tileColor: Colors.white,
+      ),
+    );
+  }
+  itemProfile2(String title, String subtitle) {
+    return Container(
+      decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10),
+          ),
+      child: ListTile(
+        title: Text(title),
+        subtitle: Text(subtitle),
+             
         trailing: Icon(Icons.arrow_forward, color: Colors.grey.shade400),
         tileColor: Colors.white,
       ),
